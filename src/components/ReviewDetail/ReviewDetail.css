@@ -1,0 +1,16 @@
+.review-detail{
+border: 2px solid lightgray;
+padding: 10px;
+border-radius: 10px;
+display: flex;
+}
+.review-img img{
+    width: 100px;
+    margin-right: 10px;
+   
+}
+.review-info p{
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+}

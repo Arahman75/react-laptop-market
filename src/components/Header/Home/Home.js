@@ -1,8 +1,12 @@
 import React from 'react';
 import './Home.css';
 import laptop from '../../image/laptop3.jpg';
+import useProduct from '../../hooks/useProduct';
+import ShowReview from '../../ShowReview/ShowReview';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
+    const [reviews, setReviews] = useProduct();
     return (
         <section className='title'>
             <h1>Welcome To Our Laptop Shop</h1>
@@ -16,6 +20,20 @@ const Home = () => {
                     <img src={laptop} alt="" />
                 </div>
 
+            </div>
+            <div>
+                <h1>Show the Reviews :{reviews.length} </h1>
+                <div className='show-review'>
+                    {
+                        reviews.map(review => <ShowReview 
+                            key ={review.id}
+                            review={review}
+                            ></ShowReview>)
+                    }
+                </div>
+               <div  className='review-btn'>
+             <button> <Link to="/review">See All Reviews</Link></button>
+               </div>
             </div>
         </section>
     );
