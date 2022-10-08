@@ -1,5 +1,11 @@
 # Getting Started with Create React App
+
+## Project Name : React-laptop-market
+
 ## live site link: https://laptop-market-23ab.netlify.app/
+
+## Code link: https://github.com/Arahman75/react-laptop-market
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
